@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayFolks", "src\DisplayFolks\DisplayFolks.csproj", "{B3E5D8EE-EE64-4A42-936A-2EA797BAE7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolksBusinessLayer", "src\FolksBusinessLayer\FolksBusinessLayer.csproj", "{9455B969-E544-4170-B4B3-A17CE44FD6E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolksDataLayer", "src\FolksDataLayer\FolksDataLayer.csproj", "{08EEF5A2-B462-4298-8B15-5210938BD642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts", "src\DataContracts\DataContracts.csproj", "{BE910EFC-098B-418F-B665-A021750ED44E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolksUnitTests", "Tests\FolksUnitTests\FolksUnitTests.csproj", "{57E61EFE-56C4-42D6-B845-4D411A451C0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C619F947-4A61-4654-87AA-3E1822489DDA}"
+	ProjectSection(SolutionItems) = preProject
+		DisplayFolks.vsmdi = DisplayFolks.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolksServiceLayer", "src\FolksServiceLayer\FolksServiceLayer.csproj", "{158EA2A7-8097-428A-A36C-C24BD0EF2532}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DisplayFolks.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E5D8EE-EE64-4A42-936A-2EA797BAE7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E5D8EE-EE64-4A42-936A-2EA797BAE7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E5D8EE-EE64-4A42-936A-2EA797BAE7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E5D8EE-EE64-4A42-936A-2EA797BAE7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9455B969-E544-4170-B4B3-A17CE44FD6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9455B969-E544-4170-B4B3-A17CE44FD6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9455B969-E544-4170-B4B3-A17CE44FD6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9455B969-E544-4170-B4B3-A17CE44FD6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EEF5A2-B462-4298-8B15-5210938BD642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EEF5A2-B462-4298-8B15-5210938BD642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EEF5A2-B462-4298-8B15-5210938BD642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EEF5A2-B462-4298-8B15-5210938BD642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE910EFC-098B-418F-B665-A021750ED44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE910EFC-098B-418F-B665-A021750ED44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE910EFC-098B-418F-B665-A021750ED44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE910EFC-098B-418F-B665-A021750ED44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E61EFE-56C4-42D6-B845-4D411A451C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E61EFE-56C4-42D6-B845-4D411A451C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E61EFE-56C4-42D6-B845-4D411A451C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E61EFE-56C4-42D6-B845-4D411A451C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158EA2A7-8097-428A-A36C-C24BD0EF2532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158EA2A7-8097-428A-A36C-C24BD0EF2532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158EA2A7-8097-428A-A36C-C24BD0EF2532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158EA2A7-8097-428A-A36C-C24BD0EF2532}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

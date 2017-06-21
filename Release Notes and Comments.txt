@@ -1,0 +1,32 @@
+Hello,
+
+Here are some notes about the code:
+
+1)  Please change the ConnectionString settings in the MVC application web.config to point to your local database instance (and the wcf service and the unit test if you wish to run those as well)
+
+2)  I have added a couple of database scripts one to increase the varchar size and the other to add sprocs, you will probably only need to run the sprocs.sql on your local environment to add my custom sprocs.  
+
+3)  Needed to give Network service account execute permissions to run sprocs while debugging from visual studio
+
+4)  I have used and MVC application to implement the true separation of Presentation from other tiers and implementation of Microsoft/Java Model2 pattern
+
+5)  I have used Active Record pattern on my Data Layer implementation
+
+6)  I have used the Repository Pattern for my Business Layer
+
+7)  I have used the Service Layer pattern to decouple the MVC application from the BusinessLayer by creating a WCF service to expose the business layer functionality.  For this service layer i set the properties of the website to run using IIS instead of the default vs browser.  I have submitted the sample to call to the BusinessLayer directly from the Controller in the MVC application for simplicity however.  
+
+
+8)  I have used my own CommonLibrary that i wrote and use for many of my projects because it automates many common coding tasks. 
+
+9)  I used the code generation tool that i wrote to automate some common programming tasks like building DTO's, Data Access calls to CRUD, create sprocs, and to create the business objects.  Normally i do not use these directly but instead inherit from them and override their virtual methods when applicable.  For purposes of the demo just wanted to make it as simple as possible.  In the real world Entity Framework or another tool that serves that purpose would fit well into this application due to the layered architecture.
+
+10)  I have used JQueury and ASP.NET as well.
+
+11)  I felt that there was some security risk in just spitting out the HTML that was imbedded in the datase field Bio, and in production it would be necessary to ensure that there was no malicious script coming out of the database and spit out to the browser directly.
+
+12)  To access the wcf service debugging from visual studio may need to modify the website permissions.
+
+13) setup to use log4net, just to show the way i normally initialize it and then have it available in the class it is used from.  Log exceptions and then throw friendly application exceptions as to not inadvertently expose sensitive server information to the end consumer.
+
+14) i would think that this application is over-engineered for its intended purpose, but tried to follow the instructions in regards to skills/code.  i do like to write applications this way however in general as it saves time and resources if future requirements cause the application to become popular.  It only makes sense if tools are used to automate common time consuming code writing and testing.  Entity framework, code gen tools etc.style
